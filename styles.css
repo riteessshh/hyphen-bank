@@ -1,0 +1,169 @@
+header {
+  padding: 50px 120px;
+}
+header nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .logo img {
+  width: 120px;
+}
+header nav .nav-items {
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header nav .nav-items .items a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 24px;
+  font-family: "Lora", serif;
+}
+
+.contanier {
+  padding: 50px 120px;
+}
+.contanier .hero-text {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contanier .hero-text h1 {
+  margin: 0 auto;
+  font-size: 144px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.contanier .action-button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 840px;
+  margin: auto;
+}
+.contanier .action-button .button {
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+.contanier .action-button .button img {
+  width: 100%;
+  height: 100%;
+}
+.contanier .action-button .button p {
+  font-family: "Lora", serif;
+  position: absolute;
+  color: white;
+  font-size: 52px;
+  margin: 0;
+  top: 65px;
+}
+.contanier .action-button .send-button p {
+  left: 50px;
+}
+.contanier .action-button .cusomer-button p {
+  left: 70px;
+}
+
+.pay-contanier {
+  padding: 0 120px;
+}
+.pay-contanier .hero-text {
+  margin-bottom: 20px;
+}
+.pay-contanier .hero-text h1 {
+  font-size: 108px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.pay-contanier .card {
+  position: relative;
+  width: 780px;
+  height: 380px;
+}
+.pay-contanier .card img {
+  width: 100%;
+  height: 100%;
+}
+.pay-contanier .card .form {
+  position: absolute;
+  top: 10px;
+  padding-left: 40px;
+}
+.pay-contanier .card .form form {
+  color: white;
+  font-family: "Lora", serif;
+}
+.pay-contanier .card .form form label {
+  display: block;
+  font-size: 48px;
+  padding: 12px 0;
+}
+.pay-contanier .card .form form input {
+  display: block;
+  color: black;
+  width: 560px;
+  height: 45px;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  outline: none;
+}
+.pay-contanier .card .form form button {
+  cursor: pointer;
+  width: 160px;
+  height: 50px;
+  margin: 26px 0 0;
+  border: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, rgba(242, 198, 179, 0.8), rgba(118, 74, 180, 0.8));
+  color: white;
+  font-size: 24px;
+  filter: brightness(0.9);
+}
+.pay-contanier .card .form form button:hover {
+  filter: brightness(1);
+}
+
+.customer-contanier {
+  padding: 0 120px;
+}
+.customer-contanier .hero-text h1 {
+  font-size: 108px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.customer-contanier .customer-data .customers {
+  width: 800px;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+.customer-contanier .customer-data .customers th {
+  background: #121212;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: white;
+  padding: 15px 12px;
+  text-align: left;
+  font-size: 24px;
+}
+.customer-contanier .customer-data .customers td {
+  font-family: "Lora", serif;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 20px;
+}
+.customer-contanier .customer-data .customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.customer-contanier .customer-data .customers tr:hover {
+  background-color: #ddd;
+}
+
+/*# sourceMappingURL=styles.css.map */
