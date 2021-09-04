@@ -1,0 +1,23 @@
+{% include "header.html" %}
+  <div class="customer-contanier">
+    <div class="hero-text">
+      <h1>customers</h1>
+    </div>
+    <div class="customer-data">
+      <table class="customers">
+        <tr>
+          <th>name</th>
+          <th>account number</th>
+          <th>email address</th>
+        </tr>
+        {% for item in c_list: %}
+          <tr>
+            <td><a href="{{ url_for('payment', customer_id=item.id) }}">{{ item.name }}</a></td>
+            <td><a href="#">{{ item.acc_no }}</a></td>
+            <td><a href="#">{{ item.email }}</a></td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+{% include "footer.html" %}

@@ -1,0 +1,23 @@
+{% include "header.html" %}
+
+  <div class="contanier">
+    <div class="hero-text">
+      <h1>Welcome back!</h1>
+    </div>
+    <div class="action-button">
+      <a href="{{ url_for('pay') }}">
+        <div class="send-button button">
+          <img src="{{ url_for('static', filename='images/card-1.svg')}}" alt="send money button">
+          <p>send money</p>
+        </div>
+      </a>
+      <a href="{{ url_for('customers') }}">
+        <div class="button cusomer-button">
+          <img src="{{ url_for('static', filename='images/card-2.svg')}}" alt="customer list button">
+          <p>customers</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+{% include "footer.html" %}

@@ -23,6 +23,14 @@ header nav .nav-items .items a {
   font-family: "Lora", serif;
 }
 
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  position: fixed;
+  bottom: 20px;
+  left: 46%;
+}
+
 .contanier {
   padding: 50px 120px;
 }
@@ -40,6 +48,7 @@ header nav .nav-items .items a {
 .contanier .action-button {
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 840px;
   margin: auto;
@@ -72,7 +81,7 @@ header nav .nav-items .items a {
   padding: 0 120px;
 }
 .pay-contanier .hero-text {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .pay-contanier .hero-text h1 {
   font-size: 108px;
@@ -100,8 +109,8 @@ header nav .nav-items .items a {
 }
 .pay-contanier .card .form form label {
   display: block;
-  font-size: 48px;
-  padding: 12px 0;
+  font-size: 24px;
+  padding: 6px 0;
 }
 .pay-contanier .card .form form input {
   display: block;
@@ -130,6 +139,27 @@ header nav .nav-items .items a {
   filter: brightness(1);
 }
 
+.alert {
+  position: absolute;
+  font-family: "Lora", serif;
+  top: 460px;
+  right: 220px;
+  width: 250px;
+  height: 220px;
+  text-align: center;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, rgba(242, 198, 179, 0.8), rgba(118, 74, 180, 0.8));
+  color: white;
+}
+.alert h1 {
+  margin: 10px 0 0;
+  font-size: 48px;
+}
+.alert .tick {
+  font-size: 52px;
+  margin: 0;
+}
+
 .customer-contanier {
   padding: 0 120px;
 }
@@ -141,8 +171,10 @@ header nav .nav-items .items a {
 }
 .customer-contanier .customer-data .customers {
   width: 800px;
+  max-height: 300px;
   border-collapse: collapse;
   border-radius: 10px;
+  overflow: scroll;
 }
 .customer-contanier .customer-data .customers th {
   background: #121212;
@@ -158,6 +190,10 @@ header nav .nav-items .items a {
   border: 1px solid #ddd;
   padding: 8px;
   font-size: 20px;
+}
+.customer-contanier .customer-data .customers td a {
+  text-decoration: none;
+  color: inherit;
 }
 .customer-contanier .customer-data .customers tr:nth-child(even) {
   background-color: #f2f2f2;

@@ -1,0 +1,27 @@
+{% include "header.html" %}
+  <div class="pay-contanier">
+    <div class="hero-text">
+      <h1>send money</h1>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/card-3.svg')}}" alt="card background">
+      <div class="form">
+        <form class="input-form" action="{{ url_for('pay')}}" method="post">
+          <label>to</label>
+          <input type="text" name="" value="{{ name }}" placeholder="enter the account holder name">
+          <label>account number</label>
+          <input type="text" name="" value="{{ account }}" placeholder="enter the account number">
+          <label>amount</label>
+          <input type="text" name="" value="" placeholder="enter the amount">
+          <button type="submit" name="button">Send</button>
+        </form>
+      </div>
+    </div>
+    {% if send: %}
+    <div class="alert">
+      <h1>Money Sent!</h1>
+      <h1 class="tick">✔</h1>
+    </div>
+    {% endif %}
+  </div>
+{% include "footer.html" %}
