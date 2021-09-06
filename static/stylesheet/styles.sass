@@ -121,45 +121,59 @@ footer
 .alert
   position: absolute
   font-family: 'Lora', serif
-  top: 460px
-  right: 220px
-  width: 250px
-  height: 220px
+  top: 453px
+  right: 10%
+  width: 400px
+  height: 227px
   text-align: center
+  align-items: center
   border-radius: 10px
-  background-image: linear-gradient(to right, rgb(242, 198, 179, 80%), rgb(118, 74, 180, 80%))
+  background-image: linear-gradient(to right, rgb(240, 186, 175, 80%), rgb(240, 141, 141, 80%))
   color: white
+  display: flex
+  flex-direction: column
+  justify-content: center
   h1
-    margin: 10px 0 0
+    margin: 20px 20px 0
     font-size: 48px
   .tick
     font-size: 52px
     margin: 0
+    padding-bottom: 15px
 
 // -------------- customer list --------------
 .customer-contanier
   padding: 0 120px
   .hero-text
+    margin-bottom: 20px
     h1
       font-size: 108px
       margin: 0
       font-family: 'Montserrat', sans-serif
       font-weight: 400
+    p
+      font-size: 24px
+      margin: 0
+      font-family: 'Montserrat', sans-serif
+      font-weight: 300
   .customer-data
+    max-height: 320px
+    overflow-y: scroll
     .customers
       width: 800px
-      max-height: 300px
       border-collapse: collapse
       border-radius: 10px
-      overflow: scroll
       th
         background: #121212
         font-family: 'Montserrat', sans-serif
+        background-image: linear-gradient(to right, rgb(196, 83, 235, 80%), rgb(180, 111, 234, 80%))
         font-weight: 400
         color: white
         padding: 15px 12px
         text-align: left
         font-size: 24px
+        position: sticky
+        top: 0
       td
         font-family: 'Lora', serif
         border: 1px solid #ddd

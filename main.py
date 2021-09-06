@@ -18,14 +18,16 @@ def generate_id():
     return gen_id
 
 
-# name = "Aditya Dubey"
-# acc_num = "5409 1183 7684"
-# email = "adi@gmail.com"
+# name = "Sachin Rajput"
+# acc_num = "8452 0943 1294"
+# email = "sachin@outlook.com"
 
 # creating and adding the data in the database
 # db = sqlite3.connect("customer_data.db")
 # db.row_factory = sqlite3.Row
 # cur = db.cursor()
+# cur.execute("select * from customers")
+# data = cur.fetchall()
 # cur.execute("CREATE TABLE customers(id INTEGER PRIMARY KEY, customer_id varchar(250) NOT NULL UNIQUE, "
 #             "name varchar(250) NOT NULL UNIQUE, "
 #             "account INTEGER NOT NULL UNIQUE, email varchar(250) NOT NULL UNIQUE)")
@@ -41,8 +43,45 @@ def home():
 @app.route("/pay", methods=['GET', 'POST'])
 def pay():
     if request.method == 'POST':
-        print("send")
-        return render_template("pay.html", place="pay", send=True)
+        if request.form.get('account') and request.form.get('name') and not request.form.get('amount') == '':
+            print("send")
+            print(request.form.get('account').split())
+            # if len(request.form.get('account')) ==
+            return render_template("pay.html", place="pay", send='yes')
+        if request.form.get('account') and not request.form.get('name') and not request.form.get('amount') == '':
+            print("name missing")
+            print(request.form.get('amount'))
+            acc = request.form.get('account')
+            amm = request.form.get('amount')
+            return render_template("pay.html", place="pay", send='name', account=acc, amount=amm)
+        if not request.form.get('account') and request.form.get('name') and not request.form.get('amount') == '':
+            print("name missing")
+            print(request.form.get('amount'))
+            name = request.form.get('name')
+            amm = request.form.get('amount')
+            return render_template("pay.html", place="pay", send='account', name=name, amount=amm)
+        if request.form.get('account') and request.form.get('name') and request.form.get('amount') == '':
+            print("amount not given!")
+            print(request.form.get('amount'))
+            name = request.form.get('name')
+            acc = request.form.get('account')
+            return render_template("pay.html", place="pay", send='amount', name=name, account=acc)
+        if request.form.get('account') and not request.form.get('name') and request.form.get('amount') == '':
+            print("amount not given!")
+            print(request.form.get('amount'))
+            acc = request.form.get('account')
+            return render_template("pay.html", place="pay", send='no', account=acc)
+        if not request.form.get('account') and request.form.get('name') and request.form.get('amount') == '':
+            print("amount not given!")
+            print(request.form.get('amount'))
+            name = request.form.get('name')
+            return render_template("pay.html", place="pay", send='no', name=name)
+        if request.form.get('amount') == '':
+            print("none")
+            return render_template("pay.html", place="pay", send='no')
+        if request.form.get('account') == '' and request.form.get('account') == '' and not request.form.get('amount') == '':
+            print("none")
+            return render_template("pay.html", place="pay", send='no')
     return render_template("pay.html", place="pay")
 
 

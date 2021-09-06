@@ -2,6 +2,7 @@
   <div class="customer-contanier">
     <div class="hero-text">
       <h1>customers</h1>
+      <p>(click to send money)</p>
     </div>
     <div class="customer-data">
       <table class="customers">
@@ -13,8 +14,8 @@
         {% for item in c_list: %}
           <tr>
             <td><a href="{{ url_for('payment', customer_id=item.id) }}">{{ item.name }}</a></td>
-            <td><a href="#">{{ item.acc_no }}</a></td>
-            <td><a href="#">{{ item.email }}</a></td>
+            <td><a href="{{ url_for('payment', customer_id=item.id) }}">{{ item.acc_no }}</a></td>
+            <td><a href="{{ url_for('payment', customer_id=item.id) }}">{{ item.email }}</a></td>
           </tr>
         {% endfor %}
       </table>

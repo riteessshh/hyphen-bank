@@ -142,26 +142,34 @@ footer {
 .alert {
   position: absolute;
   font-family: "Lora", serif;
-  top: 460px;
-  right: 220px;
-  width: 250px;
-  height: 220px;
+  top: 453px;
+  right: 10%;
+  width: 400px;
+  height: 227px;
   text-align: center;
+  align-items: center;
   border-radius: 10px;
-  background-image: linear-gradient(to right, rgba(242, 198, 179, 0.8), rgba(118, 74, 180, 0.8));
+  background-image: linear-gradient(to right, rgba(240, 186, 175, 0.8), rgba(240, 141, 141, 0.8));
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .alert h1 {
-  margin: 10px 0 0;
+  margin: 20px 20px 0;
   font-size: 48px;
 }
 .alert .tick {
   font-size: 52px;
   margin: 0;
+  padding-bottom: 15px;
 }
 
 .customer-contanier {
   padding: 0 120px;
+}
+.customer-contanier .hero-text {
+  margin-bottom: 20px;
 }
 .customer-contanier .hero-text h1 {
   font-size: 108px;
@@ -169,21 +177,32 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
+.customer-contanier .hero-text p {
+  font-size: 24px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.customer-contanier .customer-data {
+  max-height: 320px;
+  overflow-y: scroll;
+}
 .customer-contanier .customer-data .customers {
   width: 800px;
-  max-height: 300px;
   border-collapse: collapse;
   border-radius: 10px;
-  overflow: scroll;
 }
 .customer-contanier .customer-data .customers th {
   background: #121212;
   font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(to right, rgba(196, 83, 235, 0.8), rgba(180, 111, 234, 0.8));
   font-weight: 400;
   color: white;
   padding: 15px 12px;
   text-align: left;
   font-size: 24px;
+  position: sticky;
+  top: 0;
 }
 .customer-contanier .customer-data .customers td {
   font-family: "Lora", serif;

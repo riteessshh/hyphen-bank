@@ -8,19 +8,39 @@
       <div class="form">
         <form class="input-form" action="{{ url_for('pay')}}" method="post">
           <label>to</label>
-          <input type="text" name="" value="{{ name }}" placeholder="enter the account holder name">
+          <input type="text" name="name" value="{{ name }}" placeholder="enter the account holder name">
           <label>account number</label>
-          <input type="text" name="" value="{{ account }}" placeholder="enter the account number">
+          <input type="text" name="account" value="{{ account }}" placeholder="enter the account number">
           <label>amount</label>
-          <input type="text" name="" value="" placeholder="enter the amount">
+          <input type="text" name="amount" value="{{ amount }}" placeholder="enter the amount">
           <button type="submit" name="button">Send</button>
         </form>
       </div>
     </div>
-    {% if send: %}
+    {% if send == 'yes': %}
     <div class="alert">
       <h1>Money Sent!</h1>
       <h1 class="tick">✔</h1>
+    </div>
+    {% elif send == 'no': %}
+    <div class="alert">
+      <h1>Enter the details!</h1>
+      <h1 class="tick">❌</h1>
+    </div>
+    {% elif send == 'amount': %}
+    <div class="alert">
+      <h1>Enter the amount!</h1>
+      <h1 class="tick">❌</h1>
+    </div>
+    {% elif send == 'name': %}
+    <div class="alert">
+      <h1>Enter the name!</h1>
+      <h1 class="tick">❌</h1>
+    </div>
+    {% elif send == 'account': %}
+    <div class="alert">
+      <h1>Accunt number is missing!</h1>
+      <h1 class="tick">❌</h1>
     </div>
     {% endif %}
   </div>
