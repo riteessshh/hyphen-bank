@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <meta charset="utf-8">
   {% if place == "home": %}
     <title>hyphen Bank - Home</title>
@@ -26,6 +27,9 @@
     <nav>
       <div class="logo">
         <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.svg')}}" alt="hyphen-logo"></a>
+      </div>
+      <div class="menu">
+        <img src="{{ url_for('static', filename='images/menu.svg')}}" alt="menu">
       </div>
       <div class="nav-items">
         <div class="items">

@@ -4,6 +4,8 @@ header
     position: relative
     display: flex
     justify-content: space-between
+    .menu
+      display: none
     .logo
       img
         width: 120px
@@ -66,6 +68,7 @@ footer
     .cusomer-button
       p
         left: 70px
+
 
 // -------------- pay --------------
 .pay-contanier
@@ -186,3 +189,161 @@ footer
         background-color: #f2f2f2
       tr:hover
         background-color: #ddd
+
+@media (max-width: 1100px)
+  header
+    padding: 50px 50px
+  footer
+    left: 36%
+  .contanier
+    padding: 20px 50px
+    .hero-text
+      margin-bottom: 10px
+      h1
+        font-size: 6rem
+    .action-button
+      flex-direction: column
+      width: auto
+      .button
+        width: 100%
+        padding-bottom: 20px
+      .send-button
+        p
+          left: 34%
+      .cusomer-button
+        p
+          left: 36%
+
+  // -------------- pay --------------
+  .pay-contanier
+    padding: 0 50px
+    .hero-text
+      h1
+        font-size: 5rem
+    .card
+      width: 652px
+      height: auto
+      .form
+        padding-left: 30px
+        form
+          label
+            font-size: 20px
+            padding: 2px 0
+          input
+            width: 520px
+            height: 40px
+    .alert
+      top: 588px
+      right: 25%
+  // -------------- customer list --------------
+  .customer-contanier
+    padding: 0 50px
+    .hero-text
+      margin-bottom: 10px
+      h1
+        font-size: 6rem
+      p
+        font-size: 2rem
+    .customer-data
+      max-height: none
+      .customers
+        width: auto
+
+@media (max-width: 770px)
+  .contanier
+    .action-button
+      .send-button
+        p
+          left: 27%
+      .cusomer-button
+        p
+          left: 30%
+
+@media (max-width: 550px)
+  header
+    padding: 20px 10px
+    nav
+      align-items: center
+      .menu
+        display: block
+      .nav-items
+        display: none
+  .contanier
+    padding: 10px
+    .hero-text
+      h1
+        font-size: 4rem
+    .action-button
+      .send-button
+        p
+          left: 12%
+      .cusomer-button
+        p
+          left: 16%
+  // -------------- pay --------------
+  .pay-contanier
+    padding: 0 10px
+    .hero-text
+      h1
+        font-size: 4rem
+    .card
+      width: auto
+      height: auto
+      .form
+        padding-left: 10px
+        top: 6px
+        form
+          label
+            padding: 0
+          input
+            width: 320px
+            height: 30px
+            font-size: 18px
+          button
+            position: relative
+            right: 10px
+    .alert
+      top: 550px
+      right: 3%
+  // -------------- customer list --------------
+  .customer-contanier
+    padding: 0 10px
+    .hero-text
+      margin-bottom: 10px
+      h1
+        font-size: 4rem
+      p
+        font-size: 2rem
+    .customer-data
+      max-height: 560px
+      .customers
+        width: auto
+
+@media (max-width: 380px)
+  .contanier
+    .action-button
+      .send-button
+        p
+          left: 6%
+      .cusomer-button
+        p
+          left: 12%
+  // -------------- pay --------------
+  .pay-contanier
+    .card
+      .form
+        padding-left: 10px
+        top: 2px
+        form
+          label
+            padding: 1px
+          input
+            width: 300px
+            height: 22px
+            font-size: 16px
+          button
+            position: relative
+            right: 10px
+    .alert
+      top: 550px
+      right: 0

@@ -6,6 +6,9 @@ header nav {
   display: flex;
   justify-content: space-between;
 }
+header nav .menu {
+  display: none;
+}
 header nav .logo img {
   width: 120px;
 }
@@ -219,6 +222,199 @@ footer {
 }
 .customer-contanier .customer-data .customers tr:hover {
   background-color: #ddd;
+}
+
+@media (max-width: 1100px) {
+  header {
+    padding: 50px 50px;
+  }
+
+  footer {
+    left: 36%;
+  }
+
+  .contanier {
+    padding: 20px 50px;
+  }
+  .contanier .hero-text {
+    margin-bottom: 10px;
+  }
+  .contanier .hero-text h1 {
+    font-size: 6rem;
+  }
+  .contanier .action-button {
+    flex-direction: column;
+    width: auto;
+  }
+  .contanier .action-button .button {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .contanier .action-button .send-button p {
+    left: 34%;
+  }
+  .contanier .action-button .cusomer-button p {
+    left: 36%;
+  }
+
+  .pay-contanier {
+    padding: 0 50px;
+  }
+  .pay-contanier .hero-text h1 {
+    font-size: 5rem;
+  }
+  .pay-contanier .card {
+    width: 652px;
+    height: auto;
+  }
+  .pay-contanier .card .form {
+    padding-left: 30px;
+  }
+  .pay-contanier .card .form form label {
+    font-size: 20px;
+    padding: 2px 0;
+  }
+  .pay-contanier .card .form form input {
+    width: 520px;
+    height: 40px;
+  }
+  .pay-contanier .alert {
+    top: 588px;
+    right: 25%;
+  }
+
+  .customer-contanier {
+    padding: 0 50px;
+  }
+  .customer-contanier .hero-text {
+    margin-bottom: 10px;
+  }
+  .customer-contanier .hero-text h1 {
+    font-size: 6rem;
+  }
+  .customer-contanier .hero-text p {
+    font-size: 2rem;
+  }
+  .customer-contanier .customer-data {
+    max-height: none;
+  }
+  .customer-contanier .customer-data .customers {
+    width: auto;
+  }
+}
+@media (max-width: 770px) {
+  .contanier .action-button .send-button p {
+    left: 27%;
+  }
+  .contanier .action-button .cusomer-button p {
+    left: 30%;
+  }
+}
+@media (max-width: 550px) {
+  header {
+    padding: 20px 10px;
+  }
+  header nav {
+    align-items: center;
+  }
+  header nav .menu {
+    display: block;
+  }
+  header nav .nav-items {
+    display: none;
+  }
+
+  .contanier {
+    padding: 10px;
+  }
+  .contanier .hero-text h1 {
+    font-size: 4rem;
+  }
+  .contanier .action-button .send-button p {
+    left: 12%;
+  }
+  .contanier .action-button .cusomer-button p {
+    left: 16%;
+  }
+
+  .pay-contanier {
+    padding: 0 10px;
+  }
+  .pay-contanier .hero-text h1 {
+    font-size: 4rem;
+  }
+  .pay-contanier .card {
+    width: auto;
+    height: auto;
+  }
+  .pay-contanier .card .form {
+    padding-left: 10px;
+    top: 6px;
+  }
+  .pay-contanier .card .form form label {
+    padding: 0;
+  }
+  .pay-contanier .card .form form input {
+    width: 320px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .pay-contanier .card .form form button {
+    position: relative;
+    right: 10px;
+  }
+  .pay-contanier .alert {
+    top: 550px;
+    right: 3%;
+  }
+
+  .customer-contanier {
+    padding: 0 10px;
+  }
+  .customer-contanier .hero-text {
+    margin-bottom: 10px;
+  }
+  .customer-contanier .hero-text h1 {
+    font-size: 4rem;
+  }
+  .customer-contanier .hero-text p {
+    font-size: 2rem;
+  }
+  .customer-contanier .customer-data {
+    max-height: 560px;
+  }
+  .customer-contanier .customer-data .customers {
+    width: auto;
+  }
+}
+@media (max-width: 380px) {
+  .contanier .action-button .send-button p {
+    left: 6%;
+  }
+  .contanier .action-button .cusomer-button p {
+    left: 12%;
+  }
+
+  .pay-contanier .card .form {
+    padding-left: 10px;
+    top: 2px;
+  }
+  .pay-contanier .card .form form label {
+    padding: 1px;
+  }
+  .pay-contanier .card .form form input {
+    width: 300px;
+    height: 22px;
+    font-size: 16px;
+  }
+  .pay-contanier .card .form form button {
+    position: relative;
+    right: 10px;
+  }
+  .pay-contanier .alert {
+    top: 550px;
+    right: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
