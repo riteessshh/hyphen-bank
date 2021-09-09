@@ -365,7 +365,9 @@ footer {
   }
   .pay-contanier .alert {
     top: 550px;
-    right: 3%;
+    right: 15%;
+    width: 300px;
+    height: 200px;
   }
 
   .customer-contanier {
@@ -443,7 +445,7 @@ footer {
     padding: 3px;
   }
   .pay-contanier .card .form {
-    padding-left: 1px;
+    padding-left: 3px;
   }
   .pay-contanier .card .form form label {
     font-size: 16px;
@@ -452,6 +454,9 @@ footer {
     width: 220px;
     height: 17px;
     border-radius: 3px;
+  }
+  .pay-contanier .card .form form button {
+    right: auto;
   }
   .pay-contanier .alert {
     right: 18%;
