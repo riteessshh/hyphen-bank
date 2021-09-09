@@ -439,6 +439,12 @@ footer {
     font-size: 40px;
   }
 
+  .pay-contanier {
+    padding: 5px;
+  }
+  .pay-contanier .card .form {
+    padding-left: 5px;
+  }
   .pay-contanier .card .form form label {
     font-size: 16px;
   }
@@ -458,7 +464,7 @@ footer {
   }
 
   .customer-contanier .hero-text h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
