@@ -309,13 +309,6 @@ footer {
   .contanier .action-button .cusomer-button p {
     left: 30%;
   }
-
-  footer {
-    position: relative;
-    text-align: center;
-    padding-top: 20px;
-    left: auto;
-  }
 }
 @media (max-width: 550px) {
   header {
@@ -428,11 +421,20 @@ footer {
     right: 10px;
   }
   .pay-contanier .alert {
-    top: 550px;
-    right: 0;
+    width: 250px;
+    height: 180px;
+    right: 17%;
+    top: 410px;
+  }
+  .pay-contanier .alert h1 {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 330px) {
+  body {
+    margin: 0;
+  }
+
   .contanier .action-button .button p {
     font-size: 40px;
   }
@@ -444,6 +446,15 @@ footer {
     width: 240px;
     height: 18px;
     border-radius: 5px;
+  }
+  .pay-contanier .alert {
+    right: 18%;
+    top: 380px;
+    width: 200px;
+    height: 150px;
+  }
+  .pay-contanier .alert h1 {
+    font-size: 2rem;
   }
 
   .customer-contanier .hero-text h1 {
