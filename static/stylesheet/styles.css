@@ -440,18 +440,18 @@ footer {
   }
 
   .pay-contanier {
-    padding: 5px;
+    padding: 3px;
   }
   .pay-contanier .card .form {
-    padding-left: 5px;
+    padding-left: 1px;
   }
   .pay-contanier .card .form form label {
     font-size: 16px;
   }
   .pay-contanier .card .form form input {
-    width: 240px;
-    height: 18px;
-    border-radius: 5px;
+    width: 220px;
+    height: 17px;
+    border-radius: 3px;
   }
   .pay-contanier .alert {
     right: 18%;
