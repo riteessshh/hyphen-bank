@@ -309,6 +309,13 @@ footer {
   .contanier .action-button .cusomer-button p {
     left: 30%;
   }
+
+  footer {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    left: auto;
+  }
 }
 @media (max-width: 550px) {
   header {
@@ -381,13 +388,19 @@ footer {
     font-size: 2rem;
   }
   .customer-contanier .customer-data {
-    max-height: 560px;
+    max-height: none;
   }
   .customer-contanier .customer-data .customers {
     width: auto;
   }
 }
 @media (max-width: 380px) {
+  .contanier .hero-text h1 {
+    font-size: 3rem;
+  }
+  .contanier .action-button .button {
+    padding-bottom: 0;
+  }
   .contanier .action-button .send-button p {
     left: 6%;
   }
@@ -395,6 +408,9 @@ footer {
     left: 12%;
   }
 
+  .pay-contanier .hero-text h1 {
+    font-size: 3rem;
+  }
   .pay-contanier .card .form {
     padding-left: 10px;
     top: 2px;
@@ -414,6 +430,24 @@ footer {
   .pay-contanier .alert {
     top: 550px;
     right: 0;
+  }
+}
+@media (max-width: 330px) {
+  .contanier .action-button .button p {
+    font-size: 40px;
+  }
+
+  .pay-contanier .card .form form label {
+    font-size: 16px;
+  }
+  .pay-contanier .card .form form input {
+    width: 240px;
+    height: 18px;
+    border-radius: 5px;
+  }
+
+  .customer-contanier .hero-text h1 {
+    font-size: 3rem;
   }
 }
 

@@ -258,6 +258,11 @@ footer
       .cusomer-button
         p
           left: 30%
+  footer
+    position: relative
+    text-align: center
+    padding-top: 20px
+    left: auto
 
 @media (max-width: 550px)
   header
@@ -315,13 +320,18 @@ footer
       p
         font-size: 2rem
     .customer-data
-      max-height: 560px
+      max-height: none
       .customers
         width: auto
 
 @media (max-width: 380px)
   .contanier
+    .hero-text
+      h1
+        font-size: 3rem
     .action-button
+      .button
+        padding-bottom: 0
       .send-button
         p
           left: 6%
@@ -330,6 +340,9 @@ footer
           left: 12%
   // -------------- pay --------------
   .pay-contanier
+    .hero-text
+      h1
+        font-size: 3rem
     .card
       .form
         padding-left: 10px
@@ -347,3 +360,24 @@ footer
     .alert
       top: 550px
       right: 0
+
+@media (max-width: 330px)
+  .contanier
+    .action-button
+      .button
+        p
+          font-size: 40px
+  .pay-contanier
+    .card
+      .form
+        form
+          label
+            font-size: 16px
+          input
+            width: 240px
+            height: 18px
+            border-radius: 5px
+  .customer-contanier
+    .hero-text
+      h1
+        font-size: 3rem
