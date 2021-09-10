@@ -1,10 +1,6 @@
-import datetime
 from flask import Flask, render_template, redirect, url_for, request
 import sqlite3
-# from flask_wtf import FlaskForm
 from random import choice, randint, shuffle
-# from wtforms import StringField, SubmitField
-# from wtforms.validators import DataRequired, URL
 
 app = Flask(__name__)
 
@@ -17,12 +13,13 @@ def generate_id():
     gen_id = "".join(password_list)
     return gen_id
 
-
+# creating and adding the data in the database
+# data
 # name = "Sachin Rajput"
 # acc_num = "8452 0943 1294"
 # email = "sachin@outlook.com"
 
-# creating and adding the data in the database
+# database
 # db = sqlite3.connect("customer_data.db")
 # db.row_factory = sqlite3.Row
 # cur = db.cursor()
@@ -87,8 +84,6 @@ def pay():
 
 @app.route("/pay/<int:customer_id>", methods=['GET', 'POST'])
 def payment(customer_id):
-    # if request.method == 'POST':
-    #     print("send")
     print(customer_id)
     db = sqlite3.connect("customer_data.db")
     db.row_factory = sqlite3.Row
